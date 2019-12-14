@@ -12,11 +12,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var lblOutput: UILabel!
     @IBOutlet weak var txtInput: UITextField!
+    @IBOutlet weak var imgPrime: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         lblOutput.text = ""
+        imgPrime.isHidden = true
     }
 
     @IBAction func checkClick(_ sender: Any) {
@@ -24,10 +26,19 @@ class ViewController: UIViewController {
         
         numToCheck = Int(txtInput.text ?? "")
         
+        if numToCheck == nil {
+            numToCheck = 0
+            txtInput.text = "0"
+        }
+        
         if isPrime(n: numToCheck!) {
-            lblOutput.text = "Yes"
+            lblOutput.text = "Prime"
+            imgPrime.image = UIImage(named: "optimus.png")
+            imgPrime.isHidden = false
         } else {
-            lblOutput.text = "No"
+            lblOutput.text = "Not Prime"
+            imgPrime.image = UIImage(named: "not-optimus.png")
+            imgPrime.isHidden = false
         }
     }
     

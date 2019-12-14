@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,15 +27,18 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l91-Ea-7xb">
-                                <rect key="frame" x="173" y="217" width="68" height="41"/>
+                                <rect key="frame" x="173" y="194" width="68" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Check"/>
                                 <connections>
                                     <action selector="checkClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uQv-IG-Lza"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="not-optimus.png" translatesAutoresizingMaskIntoConstraints="NO" id="QZ1-4g-ITF">
+                                <rect key="frame" x="114" y="201" width="186" height="210"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0L-27-Fwe">
-                                <rect key="frame" x="178.5" y="276" width="57" height="29"/>
+                                <rect key="frame" x="178.5" y="410" width="57" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -45,17 +48,20 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h0F-Kd-g3s" secondAttribute="trailing" constant="166" id="IXb-x6-d08"/>
                             <constraint firstItem="h0F-Kd-g3s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="PEP-q9-r3B"/>
+                            <constraint firstItem="C0L-27-Fwe" firstAttribute="top" secondItem="QZ1-4g-ITF" secondAttribute="bottom" constant="-1" id="Pl9-Ql-Z95"/>
                             <constraint firstItem="h0F-Kd-g3s" firstAttribute="top" secondItem="Z2x-ep-CMe" secondAttribute="bottom" constant="25" id="YP3-F3-Xej"/>
                             <constraint firstItem="l91-Ea-7xb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZCU-JR-9U7"/>
-                            <constraint firstItem="C0L-27-Fwe" firstAttribute="top" secondItem="l91-Ea-7xb" secondAttribute="bottom" constant="18" id="djB-RM-c1j"/>
-                            <constraint firstItem="l91-Ea-7xb" firstAttribute="top" secondItem="h0F-Kd-g3s" secondAttribute="bottom" constant="24" id="ekR-0e-Hko"/>
+                            <constraint firstItem="l91-Ea-7xb" firstAttribute="top" secondItem="h0F-Kd-g3s" secondAttribute="bottom" constant="1" id="ekR-0e-Hko"/>
                             <constraint firstItem="Z2x-ep-CMe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fBB-Rq-T02"/>
-                            <constraint firstItem="C0L-27-Fwe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="omP-vo-gKv"/>
+                            <constraint firstItem="C0L-27-Fwe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iyX-cC-0a3"/>
+                            <constraint firstItem="QZ1-4g-ITF" firstAttribute="top" secondItem="l91-Ea-7xb" secondAttribute="bottom" constant="-34" id="kWL-8p-Keq"/>
+                            <constraint firstItem="QZ1-4g-ITF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r9Q-Ku-5n2"/>
                             <constraint firstItem="Z2x-ep-CMe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="58" id="uBu-Ap-kOi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="imgPrime" destination="QZ1-4g-ITF" id="QTv-23-IkK"/>
                         <outlet property="lblOutput" destination="C0L-27-Fwe" id="tzX-AO-NpT"/>
                         <outlet property="txtInput" destination="h0F-Kd-g3s" id="fKI-ao-3ev"/>
                     </connections>
@@ -65,4 +71,7 @@
             <point key="canvasLocation" x="-65.217391304347828" y="115.84821428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="not-optimus.png" width="186" height="210"/>
+    </resources>
 </document>

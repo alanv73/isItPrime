@@ -15,6 +15,8 @@
 		C2D0DE1323A2BC2000F8AE81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2D0DE1123A2BC2000F8AE81 /* LaunchScreen.storyboard */; };
 		C2D0DE1E23A2BC2000F8AE81 /* isItPrimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D0DE1D23A2BC2000F8AE81 /* isItPrimeTests.swift */; };
 		C2D0DE2923A2BC2000F8AE81 /* isItPrimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D0DE2823A2BC2000F8AE81 /* isItPrimeUITests.swift */; };
+		E74A380623A56A6E00644AFF /* optimus.png in Resources */ = {isa = PBXBuildFile; fileRef = E74A380423A56A6E00644AFF /* optimus.png */; };
+		E74A380723A56A6E00644AFF /* not-optimus.png in Resources */ = {isa = PBXBuildFile; fileRef = E74A380523A56A6E00644AFF /* not-optimus.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		C2D0DE2423A2BC2000F8AE81 /* isItPrimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = isItPrimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2D0DE2823A2BC2000F8AE81 /* isItPrimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isItPrimeUITests.swift; sourceTree = "<group>"; };
 		C2D0DE2A23A2BC2000F8AE81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E74A380423A56A6E00644AFF /* optimus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = optimus.png; sourceTree = SOURCE_ROOT; };
+		E74A380523A56A6E00644AFF /* not-optimus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "not-optimus.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				C2D0DE0A23A2BC2000F8AE81 /* ViewController.swift */,
 				C2D0DE0C23A2BC2000F8AE81 /* Main.storyboard */,
 				C2D0DE0F23A2BC2000F8AE81 /* Assets.xcassets */,
+				E74A380523A56A6E00644AFF /* not-optimus.png */,
+				E74A380423A56A6E00644AFF /* optimus.png */,
 				C2D0DE1123A2BC2000F8AE81 /* LaunchScreen.storyboard */,
 				C2D0DE1423A2BC2000F8AE81 /* Info.plist */,
 			);
@@ -233,8 +239,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2D0DE1323A2BC2000F8AE81 /* LaunchScreen.storyboard in Resources */,
+				E74A380723A56A6E00644AFF /* not-optimus.png in Resources */,
 				C2D0DE1023A2BC2000F8AE81 /* Assets.xcassets in Resources */,
 				C2D0DE0E23A2BC2000F8AE81 /* Main.storyboard in Resources */,
+				E74A380623A56A6E00644AFF /* optimus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
